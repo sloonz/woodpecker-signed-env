@@ -197,8 +197,8 @@ func main() {
 		}
 
 		env := map[string]string{
-			"CI_SIGNED_REPO":  signedRepo,
-			"CI_SIGNED_BUILD": signedBuild,
+			"WOODPECKER_SIGNED_REPO":  signedRepo,
+			"WOODPECKER_SIGNED_BUILD": signedBuild,
 		}
 
 		var modifiedConfigs []*config
