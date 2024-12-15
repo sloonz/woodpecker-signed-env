@@ -25,8 +25,8 @@ The service is configured using the following environment variables:
 
 The service injects the following environment variables into each pipeline step:
 
-- `CI_SIGNED_REPO`: JWT containing repository information
-- `CI_SIGNED_BUILD`: JWT containing build information
+- `WOODPECKER_SIGNED_REPO`: JWT containing repository information
+- `WOODPECKER_SIGNED_BUILD`: JWT containing build information
 
 The payload of these JWTs corresponds to Woodpecker's repository and pipeline models. For detailed information about the payload structure, refer to:
 - Repository payload: [model.Repo](https://pkg.go.dev/go.woodpecker-ci.org/woodpecker/v2/server/model#Repo)
